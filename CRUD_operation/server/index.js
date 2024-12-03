@@ -1,24 +1,3 @@
-# BackendWithNodeJS
-
-```
-npm init -y
-```
-
-```
- npm i express cors mongodb
-```
-
-```
-"scripts": {
-   "start":"node index.js",
-   "test": "echo \"Error: no test specified\" && exit 1"
- },
-```
-
-
-## BASIC SETTINGS
-
-```
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -43,5 +22,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Server Running...${port}`);
 })
-
-```
