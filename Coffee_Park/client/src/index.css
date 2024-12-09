@@ -7,6 +7,9 @@
 /* bokor */
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bokor&display=swap');
 
+/* Rancho  */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bokor&family=Rancho&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
