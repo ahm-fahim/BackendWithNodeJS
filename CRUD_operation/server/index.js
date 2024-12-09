@@ -62,6 +62,30 @@ async function run() {
             res.send(result);
         })
 
+        // GET Single Data
+        app.get('/notes/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) }
+            const result = await notesCollections.findOne(query)
+            res.send(result);
+        })
+
+            //UPDATE
+        app.put('/notes/:id', async (req, res) => {
+            const id = req.params.id;
+            const notes = req.body;
+            const filter = { _id: new ObjectId(id) }
+            const options = { upsert: true }
+            const updateNotes = {
+                $set: {
+                    title: notes.title,
+                    details: notes.details,
+                }
+            }
+            const result = await notesCollections.updateOne(filter, updateNotes,options)
+            res.send(result);
+        })
+
 
 
 

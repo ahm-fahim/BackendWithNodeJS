@@ -1,0 +1,7 @@
+.notesBg{
+    background-image: url('../assets/42430.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
