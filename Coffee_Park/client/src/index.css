@@ -13,3 +13,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backgroundImg{
+    background-image: url('../src/assets/images/more/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #eceae3a3;
+}
+
+.backgroundArt {
+    background-image: linear-gradient(#d2b48c60, #d2b48c54), url('../src/assets/images/more/11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+    
+.heroBackground{
+    background-image: linear-gradient(#1919190d, #1919190d), url('../src/assets/images/more/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}

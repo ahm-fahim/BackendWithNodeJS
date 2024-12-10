@@ -20,6 +20,7 @@ export default {
         backgroundAccent: "#422006", // Accent background (same as textPrimary)
         backgroundTransparent: "#eceae3a3",
         backgroundSecondary: "#D2B48C",
+        backgroundDarkTransparent: "#e0d9bfa3",
       },
     },
   },

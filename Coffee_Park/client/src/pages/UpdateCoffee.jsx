@@ -1,14 +1,31 @@
 import React from "react";
 import HomeButton from "../components/HomeButton";
 
-
 const UpdateCoffee = () => {
-
-  const handleUpdateExistingMenu = e => {
+  const handleUpdateExistingMenu = (e) => {
     e.preventDefault();
-  }
+    const form = e.target;
+    const coffee_name = form.coffee_name.value;
+    const chef_name = form.chef_name.value;
+    const supplier_name = form.supplier_name.value;
+    const test_type = form.test_type.value;
+    const category = form.category.value;
+    const details = form.details.value;
+    const photo_url = form.photo_url.value;
+    const updateExistingMenu = {
+      coffee_name,
+      chef_name,
+      supplier_name,
+      test_type,
+      category,
+      details,
+      photo_url,
+    };
+
+    console.log(updateExistingMenu);
+  };
   return (
-    <div className="flex flex-col items-center justify-center h-full">
+    <div className="backgroundImg flex flex-col items-center justify-center h-full">
       <HomeButton />
 
       <div className="bg-backgroundTransparent rounded-md h-max lg:w-3/4 p-10 m-5">
@@ -116,7 +133,7 @@ const UpdateCoffee = () => {
               id=""
             />
           </div>
-          <button className="col-span-2 my-2 bg-backgroundSecondary font-rancho  shadow-md text-textPrimary font-extrabold rounded-md py-1">
+          <button type="submit" className="col-span-2 my-2 bg-backgroundSecondary font-rancho  shadow-md text-textPrimary font-extrabold rounded-md py-1">
             Let's Update
           </button>
         </form>
